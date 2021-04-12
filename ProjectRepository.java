@@ -1,6 +1,12 @@
 import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.Date;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 
 public class ProjectRepository {
 
@@ -47,4 +53,43 @@ public class ProjectRepository {
 
         throw new Exception("Project number " + projectToUpdate.projNum + " could not be found.");
     }
+
+    public void writeToFile() {
+        try {
+            FileWriter writer = new FileWriter("ProjectFile.txt");
+            for (Project proj : ProjectList) {
+                writer.write(proj + System.lineSeparator());
+            }
+            writer.close();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void readFromFile() {
+        try {
+            FileInputStream inputFile = new FileInputStream("ProjectFile.fil");
+            ObjectInputStream ois = new ObjectInputStream(inputFile);
+            Object obj = ois.readObject();
+            ois.close();
+            Iterable<?> allProjects = (ArrayList<?>) obj;
+            ProjectList = new ArrayList<Project>();
+            for (Object proj : allProjects) {
+                ProjectList.add((Project) proj);
+            }
+
+        } catch (Exception e) {
+            System.out.println("File cannot be found");
+        }
+    }
+
 }
+
+// Reference:
+// https://stackoverflow.com/questions/16111496/java-how-can-i-write-my-arraylist-to-a-file-and-read-load-that-file-to-the
+// To save an ArrayList to a file as an object
+
+// Reference:
+// https://stackoverflow.com/questions/48029964/how-to-address-unchecked-cast-object-to-arraylistvehicle
+// To read a file as an object and cast it safely to an Interable array.

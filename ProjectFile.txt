@@ -1,0 +1,28 @@
+Project Number: 789
+Project Name: House Plessis
+Type of building: House
+Address: 123 Jasper Avenue
+ERF number: 1025
+Total fee for project: 20000
+Total amount paid to date: 5000
+Date when project is due: 30/03/2021
+Contractor: 
+Name: Willem du Plessis
+Type: Contractor
+Contact Details: 074 856 4561
+Email address: willem@dup.com
+Residentail Address: 452 Tugela Avenue
+Architect: 
+Name: Rene Malan
+Type: Architect
+Contact Details: 074 856 4561
+Email address: rene@malan
+Residentail Address: 452 Tugela Avenue
+Client: 
+Name: Tish du Plessis
+Type: Client
+Contact Details: 074 856 4561
+Email address: tish@dup.com
+Residentail Address: 452 Tugela Avenue
+Date of completion: -
+Finalised (yes/no): No

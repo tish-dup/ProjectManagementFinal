@@ -5,6 +5,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 
 public class Main {
+
     // Scanner Method for user's input
     static Scanner input = new Scanner(System.in);
 
@@ -18,7 +19,7 @@ public class Main {
     public static String menuSelection() throws ParseException {
         System.out.print("\nWelcome to Poised! \n1\t-\tAdd a new project \n2\t-\tChange due date of a project"
                 + "\n3\t-\tChange payment on project \n4\t-\tUpdate contact details \n5\t-\tFinalise a project"
-                + "\nPlease make your selection: ");
+                + "\n6\t-\tExit\nPlease make your selection: ");
 
         // User's selection determine which method should be called
         // If user's selection is '1', then user can create a new project
@@ -67,6 +68,12 @@ public class Main {
             }
 
             finalisation(selectedProj);
+        }
+
+        // User can exit program by entering '6'
+        else if (userSelection == 6) {
+            exitProgram();
+
         }
 
         return menuSelection();
@@ -227,16 +234,31 @@ public class Main {
         }
     }
 
-    public static void main(String[] args) throws ParseException {
-        // User has the choice to either use the example project in program or to
-        // generate a new project to navigate through the program.
-        String selection = getUserString("Would you like to use the example project? (y/n) ");
-        if (selection.equals("y")) {
-            Project example = projRepo.exampleProject();
-            System.out.print(example.toString());
-            menuSelection();
+    // Method to exit program and save projects
+    public static void exitProgram() throws ParseException {
+        String answer = getUserString("Are you sure you want to exit program (y/n)");
+        if (answer.equals("y")) {
+            projRepo.writeToFile();
+            System.exit(0);
         } else {
             menuSelection();
+        }
+    }
+
+    public static void main(String[] args) throws ParseException {
+        try {
+            // User has the choice to either use the example project in program or to
+            // generate a new project to navigate through the program.
+            String selection = getUserString("Would you like to use the example project? (y/n) ");
+            if (selection.equals("y")) {
+                Project example = projRepo.exampleProject();
+                System.out.print(example.toString());
+                menuSelection();
+            } else {
+                menuSelection();
+            }
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
         }
     }
 
