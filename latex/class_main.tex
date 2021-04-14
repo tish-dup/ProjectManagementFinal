@@ -1,0 +1,153 @@
+\hypertarget{class_main}{}\doxysection{Main Class Reference}
+\label{class_main}\index{Main@{Main}}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static String \mbox{\hyperlink{class_main_abf5a9e0dd515343f69b362b11560e8d6}{menu\+Selection}} ()  throws Parse\+Exception 
+\item 
+static String \mbox{\hyperlink{class_main_a5e7b0c564e8380a0e037d3894653491d}{get\+User\+String}} (String message)
+\item 
+static int \mbox{\hyperlink{class_main_aea2fae8a1b851689555cbc64c47dfb9a}{get\+User\+Int}} (String message)
+\item 
+static void \mbox{\hyperlink{class_main_a0cb7d98ce194680e4d3003e2dd5c0598}{create\+Project}} ()  throws Parse\+Exception 
+\item 
+static Project \mbox{\hyperlink{class_main_a420b422c1b2cd7b5605e4eebfe1fa007}{get\+Project}} ()
+\item 
+static void \mbox{\hyperlink{class_main_a34d97e77856c1acd82b40254e09269e1}{new\+Deadline}} ()  throws Parse\+Exception 
+\item 
+static void \mbox{\hyperlink{class_main_a5d779f1f4c79c98e652667191f4c01ca}{make\+Payment}} ()
+\item 
+static void \mbox{\hyperlink{class_main_a2789ddc6b2cdf6f878e7d8d24bb0440c}{update\+Person\+Details}} ()
+\item 
+static void \mbox{\hyperlink{class_main_a249e1c86b9ed3bdbda488c9f6359c052}{finalisation}} ()
+\item 
+static void \mbox{\hyperlink{class_main_ab8d981db117dcb13e115585f5e920ff4}{exit\+Program}} ()  throws Parse\+Exception 
+\item 
+static void \mbox{\hyperlink{class_main_a8a5d0f827edddff706cc0e6740d0579a}{main}} (String\mbox{[}$\,$\mbox{]} args)  throws Parse\+Exception 
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_main_a0cb7d98ce194680e4d3003e2dd5c0598}\label{class_main_a0cb7d98ce194680e4d3003e2dd5c0598}} 
+\index{Main@{Main}!createProject@{createProject}}
+\index{createProject@{createProject}!Main@{Main}}
+\doxysubsubsection{\texorpdfstring{createProject()}{createProject()}}
+{\footnotesize\ttfamily static void Main.\+create\+Project (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Parse\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Parse\+Exception} & // Method to create a project by requesting for user\textquotesingle{}s input for each instance in the Project class. If the user did not enter a name for the project, then the program will concatenate the building type and the client\textquotesingle{}s surname as the new project name. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_main_ab8d981db117dcb13e115585f5e920ff4}\label{class_main_ab8d981db117dcb13e115585f5e920ff4}} 
+\index{Main@{Main}!exitProgram@{exitProgram}}
+\index{exitProgram@{exitProgram}!Main@{Main}}
+\doxysubsubsection{\texorpdfstring{exitProgram()}{exitProgram()}}
+{\footnotesize\ttfamily static void Main.\+exit\+Program (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Parse\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Parse\+Exception} & // Method to exit program and save projects \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_main_a249e1c86b9ed3bdbda488c9f6359c052}\label{class_main_a249e1c86b9ed3bdbda488c9f6359c052}} 
+\index{Main@{Main}!finalisation@{finalisation}}
+\index{finalisation@{finalisation}!Main@{Main}}
+\doxysubsubsection{\texorpdfstring{finalisation()}{finalisation()}}
+{\footnotesize\ttfamily static void Main.\+finalisation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+To finalise a project, user needs to complete the date on which the project has been finalised and an invoice will be generated. Project will be stored in it\textquotesingle{}s own file. If the project has been paid in full, the appropriate message will display \mbox{\Hypertarget{class_main_a420b422c1b2cd7b5605e4eebfe1fa007}\label{class_main_a420b422c1b2cd7b5605e4eebfe1fa007}} 
+\index{Main@{Main}!getProject@{getProject}}
+\index{getProject@{getProject}!Main@{Main}}
+\doxysubsubsection{\texorpdfstring{getProject()}{getProject()}}
+{\footnotesize\ttfamily static Project Main.\+get\+Project (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyReturn}{Returns}
+Project // Method to get the project that the user wishes to work on. If there is no project in the program an appropriate message will appear. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_main_aea2fae8a1b851689555cbc64c47dfb9a}\label{class_main_aea2fae8a1b851689555cbc64c47dfb9a}} 
+\index{Main@{Main}!getUserInt@{getUserInt}}
+\index{getUserInt@{getUserInt}!Main@{Main}}
+\doxysubsubsection{\texorpdfstring{getUserInt()}{getUserInt()}}
+{\footnotesize\ttfamily static int Main.\+get\+User\+Int (\begin{DoxyParamCaption}\item[{String}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int // Method to get user input as an integer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_main_a5e7b0c564e8380a0e037d3894653491d}\label{class_main_a5e7b0c564e8380a0e037d3894653491d}} 
+\index{Main@{Main}!getUserString@{getUserString}}
+\index{getUserString@{getUserString}!Main@{Main}}
+\doxysubsubsection{\texorpdfstring{getUserString()}{getUserString()}}
+{\footnotesize\ttfamily static String Main.\+get\+User\+String (\begin{DoxyParamCaption}\item[{String}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+String // Method to get user input as a string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_main_a8a5d0f827edddff706cc0e6740d0579a}\label{class_main_a8a5d0f827edddff706cc0e6740d0579a}} 
+\index{Main@{Main}!main@{main}}
+\index{main@{main}!Main@{Main}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void Main.\+main (\begin{DoxyParamCaption}\item[{String\mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption}) throws Parse\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Parse\+Exception} & \mbox{\hyperlink{class_main}{Main}} Method -\/ User has the choice to either use the example project in program or to generate a new project to navigate through the program. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_main_a5d779f1f4c79c98e652667191f4c01ca}\label{class_main_a5d779f1f4c79c98e652667191f4c01ca}} 
+\index{Main@{Main}!makePayment@{makePayment}}
+\index{makePayment@{makePayment}!Main@{Main}}
+\doxysubsubsection{\texorpdfstring{makePayment()}{makePayment()}}
+{\footnotesize\ttfamily static void Main.\+make\+Payment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+User can add the payments made for the project to the amount paid by the client. \mbox{\Hypertarget{class_main_abf5a9e0dd515343f69b362b11560e8d6}\label{class_main_abf5a9e0dd515343f69b362b11560e8d6}} 
+\index{Main@{Main}!menuSelection@{menuSelection}}
+\index{menuSelection@{menuSelection}!Main@{Main}}
+\doxysubsubsection{\texorpdfstring{menuSelection()}{menuSelection()}}
+{\footnotesize\ttfamily static String Main.\+menu\+Selection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Parse\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyReturn}{Returns}
+String 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Parse\+Exception} & // Method to display a menu from which the user can selects \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_main_a34d97e77856c1acd82b40254e09269e1}\label{class_main_a34d97e77856c1acd82b40254e09269e1}} 
+\index{Main@{Main}!newDeadline@{newDeadline}}
+\index{newDeadline@{newDeadline}!Main@{Main}}
+\doxysubsubsection{\texorpdfstring{newDeadline()}{newDeadline()}}
+{\footnotesize\ttfamily static void Main.\+new\+Deadline (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Parse\+Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Parse\+Exception} & // Method to change the due date of the project, by requesting for user\textquotesingle{}s input and changing the input in the appropriate format. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_main_a2789ddc6b2cdf6f878e7d8d24bb0440c}\label{class_main_a2789ddc6b2cdf6f878e7d8d24bb0440c}} 
+\index{Main@{Main}!updatePersonDetails@{updatePersonDetails}}
+\index{updatePersonDetails@{updatePersonDetails}!Main@{Main}}
+\doxysubsubsection{\texorpdfstring{updatePersonDetails()}{updatePersonDetails()}}
+{\footnotesize\ttfamily static void Main.\+update\+Person\+Details (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Method to update a client, architect or contractor\textquotesingle{}s details. User selects the type of person he/she wishes to update and the program will prompt the user for the new details. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Main.\+java\end{DoxyCompactItemize}

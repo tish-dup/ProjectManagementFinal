@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_invoice" xml:lang="en-US">
+<title>Invoice Class Reference</title>
+<indexterm><primary>Invoice</primary></indexterm>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_invoice_1aeb113c89d87c43cc7c380d8dca597c4e">Invoice</link> (int projNum, String projName, Person client, int amountOut, Date completionDate)</para>
+</listitem>
+            <listitem><para>String <link linkend="_class_invoice_1a19974689b615a1edcfe92594738f8b18">toString</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_invoice_1aeb113c89d87c43cc7c380d8dca597c4e"/>    <section>
+    <title>Invoice()</title>
+<indexterm><primary>Invoice</primary><secondary>Invoice</secondary></indexterm>
+<indexterm><primary>Invoice</primary><secondary>Invoice</secondary></indexterm>
+<para><computeroutput>Invoice.Invoice (int projNum, String projName, Person client, int amountOut, Date completionDate)</computeroutput></para>
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>projNum</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>projName</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>client</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>amountOut</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>completionDate</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_invoice_1a19974689b615a1edcfe92594738f8b18"/>    <section>
+    <title>toString()</title>
+<indexterm><primary>toString</primary><secondary>Invoice</secondary></indexterm>
+<indexterm><primary>Invoice</primary><secondary>toString</secondary></indexterm>
+<para><computeroutput>String Invoice.toString ( )</computeroutput></para>
+<para><formalpara><title>Returns</title>
+
+<para>String // Output for the class <link linkend="_class_invoice">Invoice</link> </para>
+</formalpara>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+Invoice.java</section>
+</section>

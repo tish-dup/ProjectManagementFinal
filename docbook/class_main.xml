@@ -1,0 +1,288 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_main" xml:lang="en-US">
+<title>Main Class Reference</title>
+<indexterm><primary>Main</primary></indexterm>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>static String <link linkend="_class_main_1abf5a9e0dd515343f69b362b11560e8d6">menuSelection</link> ()  throws ParseException </para>
+</listitem>
+            <listitem><para>static String <link linkend="_class_main_1a5e7b0c564e8380a0e037d3894653491d">getUserString</link> (String message)</para>
+</listitem>
+            <listitem><para>static int <link linkend="_class_main_1aea2fae8a1b851689555cbc64c47dfb9a">getUserInt</link> (String message)</para>
+</listitem>
+            <listitem><para>static void <link linkend="_class_main_1a0cb7d98ce194680e4d3003e2dd5c0598">createProject</link> ()  throws ParseException </para>
+</listitem>
+            <listitem><para>static Project <link linkend="_class_main_1a420b422c1b2cd7b5605e4eebfe1fa007">getProject</link> ()</para>
+</listitem>
+            <listitem><para>static void <link linkend="_class_main_1a34d97e77856c1acd82b40254e09269e1">newDeadline</link> ()  throws ParseException </para>
+</listitem>
+            <listitem><para>static void <link linkend="_class_main_1a5d779f1f4c79c98e652667191f4c01ca">makePayment</link> ()</para>
+</listitem>
+            <listitem><para>static void <link linkend="_class_main_1a2789ddc6b2cdf6f878e7d8d24bb0440c">updatePersonDetails</link> ()</para>
+</listitem>
+            <listitem><para>static void <link linkend="_class_main_1a249e1c86b9ed3bdbda488c9f6359c052">finalisation</link> ()</para>
+</listitem>
+            <listitem><para>static void <link linkend="_class_main_1ab8d981db117dcb13e115585f5e920ff4">exitProgram</link> ()  throws ParseException </para>
+</listitem>
+            <listitem><para>static void <link linkend="_class_main_1a8a5d0f827edddff706cc0e6740d0579a">main</link> (String[] args)  throws ParseException </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_main_1a0cb7d98ce194680e4d3003e2dd5c0598"/>    <section>
+    <title>createProject()</title>
+<indexterm><primary>createProject</primary><secondary>Main</secondary></indexterm>
+<indexterm><primary>Main</primary><secondary>createProject</secondary></indexterm>
+<para><computeroutput>static void Main.createProject ( ) throws ParseException<computeroutput>[static]</computeroutput></computeroutput></para>
+<para>
+                <formalpara>
+                    <title>
+Exceptions                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>ParseException</entry>
+                                <entry>
+<para>// Method to create a project by requesting for user&apos;s input for each instance in the Project class. If the user did not enter a name for the project, then the program will concatenate the building type and the client&apos;s surname as the new project name. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+    </section><anchor xml:id="_class_main_1ab8d981db117dcb13e115585f5e920ff4"/>    <section>
+    <title>exitProgram()</title>
+<indexterm><primary>exitProgram</primary><secondary>Main</secondary></indexterm>
+<indexterm><primary>Main</primary><secondary>exitProgram</secondary></indexterm>
+<para><computeroutput>static void Main.exitProgram ( ) throws ParseException<computeroutput>[static]</computeroutput></computeroutput></para>
+<para>
+                <formalpara>
+                    <title>
+Exceptions                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>ParseException</entry>
+                                <entry>
+<para>// Method to exit program and save projects </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+    </section><anchor xml:id="_class_main_1a249e1c86b9ed3bdbda488c9f6359c052"/>    <section>
+    <title>finalisation()</title>
+<indexterm><primary>finalisation</primary><secondary>Main</secondary></indexterm>
+<indexterm><primary>Main</primary><secondary>finalisation</secondary></indexterm>
+<para><computeroutput>static void Main.finalisation ( )<computeroutput>[static]</computeroutput></computeroutput></para>
+<para>To finalise a project, user needs to complete the date on which the project has been finalised and an invoice will be generated. Project will be stored in it&apos;s own file. If the project has been paid in full, the appropriate message will display </para>
+    </section><anchor xml:id="_class_main_1a420b422c1b2cd7b5605e4eebfe1fa007"/>    <section>
+    <title>getProject()</title>
+<indexterm><primary>getProject</primary><secondary>Main</secondary></indexterm>
+<indexterm><primary>Main</primary><secondary>getProject</secondary></indexterm>
+<para><computeroutput>static Project Main.getProject ( )<computeroutput>[static]</computeroutput></computeroutput></para>
+<para><formalpara><title>Returns</title>
+
+<para>Project // Method to get the project that the user wishes to work on. If there is no project in the program an appropriate message will appear. </para>
+</formalpara>
+</para>
+    </section><anchor xml:id="_class_main_1aea2fae8a1b851689555cbc64c47dfb9a"/>    <section>
+    <title>getUserInt()</title>
+<indexterm><primary>getUserInt</primary><secondary>Main</secondary></indexterm>
+<indexterm><primary>Main</primary><secondary>getUserInt</secondary></indexterm>
+<para><computeroutput>static int Main.getUserInt (String message)<computeroutput>[static]</computeroutput></computeroutput></para>
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>message</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>int // Method to get user input as an integer </para>
+</formalpara>
+</para>
+    </section><anchor xml:id="_class_main_1a5e7b0c564e8380a0e037d3894653491d"/>    <section>
+    <title>getUserString()</title>
+<indexterm><primary>getUserString</primary><secondary>Main</secondary></indexterm>
+<indexterm><primary>Main</primary><secondary>getUserString</secondary></indexterm>
+<para><computeroutput>static String Main.getUserString (String message)<computeroutput>[static]</computeroutput></computeroutput></para>
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>message</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>String // Method to get user input as a string </para>
+</formalpara>
+</para>
+    </section><anchor xml:id="_class_main_1a8a5d0f827edddff706cc0e6740d0579a"/>    <section>
+    <title>main()</title>
+<indexterm><primary>main</primary><secondary>Main</secondary></indexterm>
+<indexterm><primary>Main</primary><secondary>main</secondary></indexterm>
+<para><computeroutput>static void Main.main (String[] args) throws ParseException<computeroutput>[static]</computeroutput></computeroutput></para>
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>args</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                
+                <formalpara>
+                    <title>
+Exceptions                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>ParseException</entry>
+                                <entry>
+<para><link linkend="_class_main">Main</link> Method - User has the choice to either use the example project in program or to generate a new project to navigate through the program. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+    </section><anchor xml:id="_class_main_1a5d779f1f4c79c98e652667191f4c01ca"/>    <section>
+    <title>makePayment()</title>
+<indexterm><primary>makePayment</primary><secondary>Main</secondary></indexterm>
+<indexterm><primary>Main</primary><secondary>makePayment</secondary></indexterm>
+<para><computeroutput>static void Main.makePayment ( )<computeroutput>[static]</computeroutput></computeroutput></para>
+<para>User can add the payments made for the project to the amount paid by the client. </para>
+    </section><anchor xml:id="_class_main_1abf5a9e0dd515343f69b362b11560e8d6"/>    <section>
+    <title>menuSelection()</title>
+<indexterm><primary>menuSelection</primary><secondary>Main</secondary></indexterm>
+<indexterm><primary>Main</primary><secondary>menuSelection</secondary></indexterm>
+<para><computeroutput>static String Main.menuSelection ( ) throws ParseException<computeroutput>[static]</computeroutput></computeroutput></para>
+<para><formalpara><title>Returns</title>
+
+<para>String </para>
+</formalpara>
+
+                <formalpara>
+                    <title>
+Exceptions                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>ParseException</entry>
+                                <entry>
+<para>// Method to display a menu from which the user can selects </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+    </section><anchor xml:id="_class_main_1a34d97e77856c1acd82b40254e09269e1"/>    <section>
+    <title>newDeadline()</title>
+<indexterm><primary>newDeadline</primary><secondary>Main</secondary></indexterm>
+<indexterm><primary>Main</primary><secondary>newDeadline</secondary></indexterm>
+<para><computeroutput>static void Main.newDeadline ( ) throws ParseException<computeroutput>[static]</computeroutput></computeroutput></para>
+<para>
+                <formalpara>
+                    <title>
+Exceptions                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>ParseException</entry>
+                                <entry>
+<para>// Method to change the due date of the project, by requesting for user&apos;s input and changing the input in the appropriate format. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+    </section><anchor xml:id="_class_main_1a2789ddc6b2cdf6f878e7d8d24bb0440c"/>    <section>
+    <title>updatePersonDetails()</title>
+<indexterm><primary>updatePersonDetails</primary><secondary>Main</secondary></indexterm>
+<indexterm><primary>Main</primary><secondary>updatePersonDetails</secondary></indexterm>
+<para><computeroutput>static void Main.updatePersonDetails ( )<computeroutput>[static]</computeroutput></computeroutput></para>
+<para>Method to update a client, architect or contractor&apos;s details. User selects the type of person he/she wishes to update and the program will prompt the user for the new details. </para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+Main.java</section>
+</section>

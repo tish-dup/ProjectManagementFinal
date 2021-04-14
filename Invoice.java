@@ -2,14 +2,23 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Invoice {
-    // Atributes
+    /**
+     * Atributes
+     */
     Person client;
     int amountOut;
     int projNum;
     String projName;
     Date completionDate;
 
-    // Constructor
+    /**
+     * 
+     * @param projNum
+     * @param projName
+     * @param client
+     * @param amountOut
+     * @param completionDate
+     */
     public Invoice(int projNum, String projName, Person client, int amountOut, Date completionDate) {
         this.projNum = projNum;
         this.projName = projName;
@@ -18,8 +27,9 @@ public class Invoice {
         this.completionDate = completionDate;
     }
 
-    // Methods
-    // Output for the class Invoice
+    /**
+     * @return String // Output for the class Invoice
+     */
     public String toString() {
         String output = "Invoice";
         output += "\nCustomer Name: " + client.name;

@@ -1,9 +1,16 @@
+import java.io.Serializable;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class Project {
-    // Atributes
+class Project implements Serializable {
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
+    /**
+     * Atributes
+     */
     int projNum;
     String projName;
     String buildingType;
@@ -19,7 +26,20 @@ public class Project {
     Date completionDate;
     boolean isFinalised;
 
-    // Constructor
+    /**
+     * 
+     * @param projNum
+     * @param projName
+     * @param buildingType
+     * @param address
+     * @param erfNum
+     * @param totalFee
+     * @param amountPaid
+     * @param deadline
+     * @param contractor
+     * @param architect
+     * @param client
+     */
     public Project(int projNum, String projName, String buildingType, String address, String erfNum, int totalFee,
             int amountPaid, Date deadline, Person contractor, Person architect, Person client) {
 
@@ -36,8 +56,9 @@ public class Project {
         this.client = client;
     }
 
-    // Methods
-    // Gives the class Project an output.
+    /**
+     * @return String // Gives the class Project an output.
+     */
     public String toString() {
         DateFormat dateformat = new SimpleDateFormat("dd/MM/yyyy");
         String output = "Project Number: " + projNum;
@@ -48,9 +69,10 @@ public class Project {
         output += "\nTotal fee for project: " + totalFee;
         output += "\nTotal amount paid to date: " + amountPaid;
         output += "\nDate when project is due: " + dateformat.format(deadline);
-        output += "\nContractor: " + contractor;
-        output += "\nArchitect: " + architect;
-        output += "\nClient: " + client;
+
+        // A string to represent the completion date. If the project hasn't been
+        // completed, then it will be represented by a '-', otherwise a completion date
+        // will be entered
 
         String completionDateString = "-";
         if (completionDate != null) {
@@ -59,6 +81,7 @@ public class Project {
 
         output += "\nDate of completion: " + completionDateString;
 
+        // Output to determine whether the project has been completed or not
         String isFinalisedString = "-";
         if (isFinalised) {
             isFinalisedString = "Yes";
@@ -68,22 +91,36 @@ public class Project {
 
         output += "\nFinalised (yes/no): " + isFinalisedString;
 
+        // Details of the contractor, architect and client
+        output += "\nContractor: " + contractor;
+        output += "\nArchitect: " + architect;
+        output += "\nClient: " + client;
+
         return output;
     }
 
-    // Add the new due date to the project
+    /**
+     * @param newDeadline // Method to add a new due date to the project
+     */
+
     public void changeDeadline(Date newDeadline) {
         this.deadline = newDeadline;
     }
 
-    // Add the new amount paid by the client
+    /**
+     * @param newAmmount // Method to add the new amount paid by the client
+     */
+
     public void addAmount(int newAmmount) {
         this.amountPaid = amountPaid + newAmmount;
     }
 
-    // To complete a project, the completion date is assigned to the project, the
-    // finalisation status is changed to true, and the oustanding amount is
-    // calculated for the invoice
+    /**
+     * @param completionDate
+     * @return Invoice // To complete a project, the completion date is assigned to
+     *         the project, the finalisation status is changed to true, and the
+     *         oustanding amount is calculated for the invoice
+     */
     public Invoice finalise(Date completionDate) {
         this.completionDate = completionDate;
         this.isFinalised = true;
@@ -95,4 +132,5 @@ public class Project {
             return null;
         }
     }
+
 }
